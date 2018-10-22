@@ -9,7 +9,7 @@
 
     <div class="list-group">
         <ng-container class="m-1 list-group-item d-flex justify-content-between align-items-center" *ngFor="let cat of categoria">
-            <a routerLink="/movies/{{cat.id}}">{{cat.categoria}}</a>
+            <a class="badge badge-warning m-2" routerLink="/movies/{{cat.id}}">{{cat.categoria}}</a>
             <!-- <span class="badge badge-primary badge-pill">{{cat.id}}</span> -->
         </ng-container>
     </div>

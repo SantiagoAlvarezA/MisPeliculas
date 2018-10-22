@@ -2,28 +2,26 @@
 
 </router-outlet> 
 -->
+<div class="container">
+    <div class="card border-success">
+        <div class="card-header bg-success">
+            <app-header> </app-header>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm-4">
+                    <app-menu-search>
+                    </app-menu-search>
 
-<div class="card">
-    <div class="card-header">
-        <app-header> </app-header>
-    </div>
-
-    <div class="card-body">
-        <div class="row">
-            <div class="col-sm-4">
-                <app-menu-search>
-
-                </app-menu-search>
-
-            </div>
-            <div class="col-sm-8">
-                <router-outlet></router-outlet>
+                </div>
+                <div class="col-sm-8">
+                    <router-outlet></router-outlet>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="card-footer text-muted">
-        <app-footer></app-footer>
+        <div class="card-footer text-black bg-success">
+            <app-footer></app-footer>
+        </div>
     </div>
 </div>
-
 <!-- <router-outlet></router-outlet> -->

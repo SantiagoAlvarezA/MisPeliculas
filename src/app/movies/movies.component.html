@@ -1,9 +1,9 @@
-<div class="border p-1 row">
+<div class="row">
 
     <ng-container *ngFor="let peli of pelicula">
         <ng-container *ngIf="peli.id_categoria == id_categoria">
             <div class="col-md-3 p-1">
-                <div class="border p-1">
+                <div class="card border-dark rounded p-1">
                     <img src="{{peli.nombre}}" class="img-rounded col-md-12">
                     <hr>
                     <h4>Duracion: {{peli.duracion}}</h4><br>
