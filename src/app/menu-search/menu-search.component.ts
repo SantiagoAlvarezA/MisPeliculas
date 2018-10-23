@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
 import { TypeCategoria } from '../type-categoria';
 import { CATEGORIA } from '../model-categoria';
 
@@ -11,7 +11,12 @@ export class MenuSearchComponent implements OnInit {
   categoria = CATEGORIA;
   selectedCategoria: TypeCategoria;
   title:string = "Categorias";
-  constructor() { }
+  @Input() cat_filter:string = "";
+  
+  
+  constructor() { 
+    console.log(this.cat_filter);
+  }
 
   ngOnInit() {
   }

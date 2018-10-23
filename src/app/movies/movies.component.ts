@@ -16,7 +16,8 @@ export class MoviesComponent implements OnInit {
   selectedPelicula = TypePelicula;
 
   constructor(private route:ActivatedRoute) { 
-    this.id_categoria =  this.route.snapshot.params['id_categoria'];
+    this.id_categoria =  this.route.snapshot.params.id_categoria;
+    console.log(this.route.snapshot.params.id_categoria);
   }
 
   ngOnInit() {
